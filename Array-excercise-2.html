@@ -6,6 +6,7 @@
 </head>
 <body>
 <button type = "button" onclick = "(creatingArray())">Bài 1: Tạo 1 mảng 2 chiều 10 phần tử</button>
+<button type = "button" onclick = "(reverseArray())">Bài 2: Tạo 1, đưa ra hiển thị mảng đảo ngược</button>
 <script>
     function creatingArray() {
         function motchieu() {
@@ -27,6 +28,44 @@
             }
         }
     }
+
+    // function reverseArray1(arr){
+    //     let b = [];
+    //     for (let j = arr.length - 1; j >= 0; j--) {
+    //         b.push(arr[j]);
+    //     }return (b)
+    // }
+    //
+    // function reverseArray(){
+    //     function motchieu() {
+    //         let a = [];
+    //         for (let i = 0; i < 5; i++) {
+    //             a.push(Math.floor((Math.random() * 20)+ 0));
+    //         }return a;
+    //     }
+    //     let b = [];
+    //     for (let i = 0; i < 5; i++){
+    //         b.push(motchieu());
+    //     }
+    // for (var j in b){
+    //      a.push(reverseArray1(b[i]));
+    //     }
+    //     document.write(a);
+    // }
+
+    function reverseArray(){
+        let a = [];
+        let b = [];
+        for ( let i = 0; i < 10; i++){
+            a.push(Math.floor((Math.random()*5)+5));//[5-10]
+        }
+        for (let j = a.length - 1; j >= 0; j--) {
+            b.push(a[j]);
+        }document.write("Các phần tử của mảng là: " + a + "<br/>");
+        document.write("Các phần tử của mảng đảo ngược là: "  + b );
+
+
+
 </script>
 </body>
 </html>
