@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array-excercise-2</title>
+</head>
+<body>
+<button type = "button" onclick = "(creatingArray())">Bài 1: Tạo 1 mảng 2 chiều 10 phần tử</button>
+<script>
+    function creatingArray() {
+        function motchieu() {
+            let a = [];
+            for (let i = 0; i < 5; i++) {
+                a.push(Math.floor((Math.random() * 20)+ 0));
+             }return a;
+        }
+        let b = [];
+        for (let i = 0; i < 5; i++){
+            b.push(motchieu());
+        }
+        for (var i in b)
+        {
+            document.write("row " + i + "<br/>");
+            for (var j in b[i])
+            {
+                document.write(" " + b[i][j]+ "<br/>");
+            }
+        }
+    }
+</script>
+</body>
+</html>
